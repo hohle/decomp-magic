@@ -1,0 +1,18 @@
+# Metrowerks Overlay
+# URL: https://gist.github.com/Linblow/541a3b24559f9c89374fdbd9e0693c40
+0 string MWo Metrowerks CodeWarrior Overlay File
+# version field (ascii number), unsupported
+>&0 string 1 (Version 1)
+# version field (ascii number), unsupported
+>&0 string 2 (Version 2)
+# version field (ascii number)
+>&0 string 3 (Version 3)
+>>0x4 lelong x ID=%d,
+>>0x8 lelong x PC=0x%08X
+>>0xC lelong x textSize=0x%X
+>>0x10 lelong x dataSize=0x%X
+>>0x14 lelong x bssSize=0x%X
+>>0x18 lelong x initializerStart=0x%08X
+>>0x1C lelong x initializerEnd=0x%08X
+>>0x20 string x name=%s
+!:mime application/octet-stream
